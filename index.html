@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -403,6 +403,25 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <form class="newsletter subscription">
+            <label class="subscribe-title" for="subscribe-mail">Підпишіться на розсилку</label>
+            <input
+              class="subscribe-input"
+              type="email"
+              name="subscribe-mail"
+              id="subscribe-mail"
+              placeholder="E-mail"
+            />
+
+            <button class="subscribe-button" type="submit">
+              Підписатися
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -412,9 +431,62 @@
         <button class="modal-btn" data-modal-close>
           <svg width="11" height="11"><use href="./images/icons.svg#close-cross"></use></svg>
         </button>
+
+        <form class="form-order" name="form-order">
+          <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <div class="form-field">
+            <label for="name" class="form-label">Ім'я</label>
+            <div class="form-input-position">
+              <input type="text" class="form-input" name="name" id="name" required />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="phone" class="form-label">Телефон</label>
+            <div class="form-input-position">
+              <input type="tel" class="form-input" name="phone" id="phone" required />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="mail" class="form-label">Пошта</label>
+            <div class="form-input-position">
+              <input type="email" class="form-input" name="mail" id="mail" required />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field textarea">
+            <label for="comment" class="form-label" rows="6">Коментар</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+
+          <label class="form-agreement">
+            <input class="agreement-checkbox visually-hidden" type="checkbox" />
+            <svg class="agreement-icon" width="16" height="15">
+              <use class="agreement-icon-uncheck" href="./images/icons.svg#square"></use>
+              <use class="agreement-icon-check" href="./images/icons.svg#check"></use>
+            </svg>
+            <span class="agreement-text"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="agreement-link" href="#">Умови договору</a></span
+            >
+          </label>
+
+          <button type="submit" class="submit-button">Відправити</button>
+        </form>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
