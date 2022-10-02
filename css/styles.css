@@ -576,7 +576,7 @@ body {
   gap: 70px;
 }
 
-.info .title {
+.info-title {
   color: var(--primary-bg-color);
   font-weight: 700;
   font-size: 14px;
@@ -613,10 +613,10 @@ body {
   opacity: 1;
 
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   padding: 40px;
 
-  background: var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -643,7 +643,7 @@ body {
   padding: 0;
 
   fill: currentColor;
-  background: var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
@@ -657,6 +657,7 @@ body {
 }
 
 .form-title {
+  display: block;
   text-align: center;
   margin-bottom: 12px;
   color: var(--title-text-color);
@@ -720,7 +721,7 @@ body {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  fill: currentColor;
+  fill: var(--title-text-color);
   transition: fill var(--animation-time) var(--animation-bezier);
 }
 
@@ -729,9 +730,9 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px 52px;
-  margin: auto;
+  margin: 0 auto;
 
-  background: #188ce8;
+  background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -771,10 +772,8 @@ body {
 .form-agreement {
   display: flex;
   align-items: center;
-  width: 425px;
+  justify-content: center;
   gap: 8px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
 }
 
@@ -804,8 +803,12 @@ body {
   margin-left: auto;
 }
 
+.subscription {
+  display: flex;
+  align-items: center;
+}
+
 .subscribe-title {
-  display: block;
   font-weight: 700;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
